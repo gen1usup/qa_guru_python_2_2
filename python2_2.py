@@ -4,7 +4,7 @@ from selene import be, have
 
 
 def test_first(open_browser):
-    assert browser.element("id='react-select-4-input']").matching(be.enabled) == False
+    assert browser.element("id='react-select-4-input']").matching(be.enabled) != True
 
 def test_second(open_browser):
     browser.element('[id="firstName"]').type('selene')
