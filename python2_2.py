@@ -16,6 +16,5 @@ def test_second(open_browser):
     browser.element('[id="userNumber"]').type('1234567890')
     browser.element('[id="submit"]').click()
     assert browser.element("//*[text()='Thanks for submitting the form']").is_displayed() == True
-    print(browser.find("//*[text()='Thanks for submitting the form']"))
 
 
